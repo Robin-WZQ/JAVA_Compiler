@@ -68,6 +68,8 @@
 
 ### 语义分析结果
 
+语法树没搞出来，就弄了个逆波兰表达式：
+
 <div align=center>
     <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic15.png width="300"/>
 </div>
