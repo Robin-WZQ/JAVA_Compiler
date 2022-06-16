@@ -1,5 +1,5 @@
 # JAVA_Complier
-编译原理实验，构建Java语言子集语法、语义分析器
+> 编译原理实验，构建Java语言子集语法、语义分析器
 
 ## 实验目的
 1.	强化对系统软件综合工程实现能力、规划能力的训练；
@@ -53,3 +53,19 @@
 <div align=center>
     <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片7.png width="500"/>
 </div>
+
+### 词法分析结果
+
+<div align=center>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic14.png width="500"/>
+</div>
+
+### 语法分析结果
+
+<div align=center>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片11.png width="500"/>
+</div>
+
+### 语义分析结果
+
+## 参考
