@@ -57,15 +57,19 @@
 ### 词法分析结果
 
 <div align=center>
-    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic14.png width="500"/>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic14.png width="300"/>
 </div>
 
 ### 语法分析结果
 
 <div align=center>
-    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片11.png width="500"/>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片11.png width="700"/>
 </div>
 
 ### 语义分析结果
+
+<div align=center>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic15.png width="300"/>
+</div>
 
 ## 参考
