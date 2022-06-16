@@ -9,3 +9,7 @@
 - 完成对附录一中文法描述的 Java 源代码的语法分析、语义分析及代码生成；
 - 词法分析直接使用词法分析器处理结果（假定已有，不需要另外开发）；
 - 通过测试用例的验收。
+
+<div align=center>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片1.png width="500"/>
+</div>
