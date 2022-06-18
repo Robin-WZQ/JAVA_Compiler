@@ -54,6 +54,13 @@
     <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片7.png width="500"/>
 </div>
 
+### 输入（JAVA语言代码）
+```
+a = 4; 
+b= a*3 - 8 + a / 2;
+while (100 > b) b = b + b * 3 - -7; 
+```
+
 ### 词法分析结果
 
 <div align=center>
