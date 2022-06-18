@@ -22,7 +22,7 @@ public class SyntaxAnalyzer {
         initProductions(); // 产生式初始化
         stack.add(0, String.valueOf(map_s2i.get("#"))); // 在stack底部加上#
         stack.add(stackTop, "Prg"); // 将S'压入栈
-        System.out.print("=====语法分析程序, by: 王中琦 1120190892====== \n");
+        System.out.print("=====语法分析程序====== \n");
         System.out.print("请输入词法分析结果的文件路径：");
         Scanner scanner = new Scanner(System.in);
         String filepath = scanner.next();
