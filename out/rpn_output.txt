@@ -1,0 +1,4 @@
+RPN: a3*8-a2/+
+RPN: bb3*+-7-
+RPN: 100b>
+RPN: bb3*+7-

@@ -1,0 +1,102 @@
+第1步：    当前栈：# Prg              待读队列：id = num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Prg --> Stc Prg
+第2步：    当前栈：# Prg Stc              待读队列：id = num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Stc --> Sas
+第3步：    当前栈：# Prg Sas              待读队列：id = num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Sas --> id=Exp;
+第4步：    当前栈：# Prg ; Com = id              待读队列：id = num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第5步：    当前栈：# Prg ; Com =              待读队列：= num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第6步：    当前栈：# Prg ; Com              待读队列：num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com --> Com2 Com3
+第7步：    当前栈：# Prg ; Com1 Com2              待读队列：num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第8步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> Int
+第9步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Int --> num
+第10步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num ; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第11步：    当前栈：# Prg ; Com1 Com3              待读队列：; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> ε
+第12步：    当前栈：# Prg ; Com1              待读队列：; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com --> ε
+第13步：    当前栈：# Prg ;              待读队列：; id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第14步：    当前栈：# Prg              待读队列：id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Prg --> Stc Prg
+第15步：    当前栈：# Prg Stc              待读队列：id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Stc --> Sas
+第16步：    当前栈：# Prg Sas              待读队列：id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Sas --> id=Exp;
+第17步：    当前栈：# Prg ; Com = id              待读队列：id = id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第18步：    当前栈：# Prg ; Com =              待读队列：= id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第19步：    当前栈：# Prg ; Com              待读队列：id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com --> Com2 Com3
+第20步：    当前栈：# Prg ; Com1 Com2              待读队列：id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第21步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> id
+第22步：    当前栈：# Prg ; Com1 Com3 id              待读队列：id * num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第23步：    当前栈：# Prg ; Com1 Com3              待读队列：* num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Mul Val Com3
+第24步：    当前栈：# Prg ; Com1 Com3 Val Mul              待读队列：* num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Mul --> *
+第25步：    当前栈：# Prg ; Com1 Com3 Val *              待读队列：* num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第26步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> Int
+第27步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：num - num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Int --> num
+第28步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num - num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第29步：    当前栈：# Prg ; Com1 Com3              待读队列：- num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> ε
+第30步：    当前栈：# Prg ; Com1              待读队列：- num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com2 --> Add Com2 Com1
+第31步：    当前栈：# Prg ; Com1 Com2 Add              待读队列：- num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Add --> -
+第32步：    当前栈：# Prg ; Com1 Com2 -              待读队列：- num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第33步：    当前栈：# Prg ; Com1 Com2              待读队列：num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第34步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> Int
+第35步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：num + id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Int --> num
+第36步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num + id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第37步：    当前栈：# Prg ; Com1 Com3              待读队列：+ id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> ε
+第38步：    当前栈：# Prg ; Com1              待读队列：+ id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com2 --> Add Com2 Com1
+第39步：    当前栈：# Prg ; Com1 Com2 Add              待读队列：+ id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Add --> +
+第40步：    当前栈：# Prg ; Com1 Com2 +              待读队列：+ id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第41步：    当前栈：# Prg ; Com1 Com2              待读队列：id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第42步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：id / num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> id
+第43步：    当前栈：# Prg ; Com1 Com3 id              待读队列：id / num ; while ( num > id ) id = id + id * num - - num ; # 
+第44步：    当前栈：# Prg ; Com1 Com3              待读队列：/ num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> Mul Val Com3
+第45步：    当前栈：# Prg ; Com1 Com3 Val Mul              待读队列：/ num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Mul --> /
+第46步：    当前栈：# Prg ; Com1 Com3 Val /              待读队列：/ num ; while ( num > id ) id = id + id * num - - num ; # 
+第47步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> Int
+第48步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：num ; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Int --> num
+第49步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num ; while ( num > id ) id = id + id * num - - num ; # 
+第50步：    当前栈：# Prg ; Com1 Com3              待读队列：; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com3 --> ε
+第51步：    当前栈：# Prg ; Com1              待读队列：; while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Com --> ε
+第52步：    当前栈：# Prg ;              待读队列：; while ( num > id ) id = id + id * num - - num ; # 
+第53步：    当前栈：# Prg              待读队列：while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Prg --> Stc Prg
+第54步：    当前栈：# Prg Stc              待读队列：while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Stc --> Swh
+第55步：    当前栈：# Prg Swh              待读队列：while ( num > id ) id = id + id * num - - num ; #          下一步所用产生式：Swh --> while ( Exr ) Sas
+第56步：    当前栈：# Prg Sas ) Exr ( while              待读队列：while ( num > id ) id = id + id * num - - num ; # 
+第57步：    当前栈：# Prg Sas ) Exr (              待读队列：( num > id ) id = id + id * num - - num ; # 
+第58步：    当前栈：# Prg Sas ) Exr              待读队列：num > id ) id = id + id * num - - num ; #          下一步所用产生式：Exr --> Val Cmp Val
+第59步：    当前栈：# Prg Sas ) Val Cmp Val              待读队列：num > id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> Int
+第60步：    当前栈：# Prg Sas ) Val Cmp Int              待读队列：num > id ) id = id + id * num - - num ; #          下一步所用产生式：Int --> num
+第61步：    当前栈：# Prg Sas ) Val Cmp num              待读队列：num > id ) id = id + id * num - - num ; # 
+第62步：    当前栈：# Prg Sas ) Val Cmp              待读队列：> id ) id = id + id * num - - num ; #          下一步所用产生式：Cmp --> >
+第63步：    当前栈：# Prg Sas ) Val >              待读队列：> id ) id = id + id * num - - num ; # 
+第64步：    当前栈：# Prg Sas ) Val              待读队列：id ) id = id + id * num - - num ; #          下一步所用产生式：Val --> id
+第65步：    当前栈：# Prg Sas ) id              待读队列：id ) id = id + id * num - - num ; # 
+第66步：    当前栈：# Prg Sas )              待读队列：) id = id + id * num - - num ; # 
+第67步：    当前栈：# Prg Sas              待读队列：id = id + id * num - - num ; #          下一步所用产生式：Sas --> id=Exp;
+第68步：    当前栈：# Prg ; Com = id              待读队列：id = id + id * num - - num ; # 
+第69步：    当前栈：# Prg ; Com =              待读队列：= id + id * num - - num ; # 
+第70步：    当前栈：# Prg ; Com              待读队列：id + id * num - - num ; #          下一步所用产生式：Com --> Com2 Com3
+第71步：    当前栈：# Prg ; Com1 Com2              待读队列：id + id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第72步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：id + id * num - - num ; #          下一步所用产生式：Val --> id
+第73步：    当前栈：# Prg ; Com1 Com3 id              待读队列：id + id * num - - num ; # 
+第74步：    当前栈：# Prg ; Com1 Com3              待读队列：+ id * num - - num ; #          下一步所用产生式：Com3 --> ε
+第75步：    当前栈：# Prg ; Com1              待读队列：+ id * num - - num ; #          下一步所用产生式：Com2 --> Add Com2 Com1
+第76步：    当前栈：# Prg ; Com1 Com2 Add              待读队列：+ id * num - - num ; #          下一步所用产生式：Add --> +
+第77步：    当前栈：# Prg ; Com1 Com2 +              待读队列：+ id * num - - num ; # 
+第78步：    当前栈：# Prg ; Com1 Com2              待读队列：id * num - - num ; #          下一步所用产生式：Com3 --> Val Com3
+第79步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：id * num - - num ; #          下一步所用产生式：Val --> id
+第80步：    当前栈：# Prg ; Com1 Com3 id              待读队列：id * num - - num ; # 
+第81步：    当前栈：# Prg ; Com1 Com3              待读队列：* num - - num ; #          下一步所用产生式：Com3 --> Mul Val Com3
+第82步：    当前栈：# Prg ; Com1 Com3 Val Mul              待读队列：* num - - num ; #          下一步所用产生式：Mul --> *
+第83步：    当前栈：# Prg ; Com1 Com3 Val *              待读队列：* num - - num ; # 
+第84步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：num - - num ; #          下一步所用产生式：Val --> Int
+第85步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：num - - num ; #          下一步所用产生式：Int --> num
+第86步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num - - num ; # 
+第87步：    当前栈：# Prg ; Com1 Com3              待读队列：- - num ; #          下一步所用产生式：Com3 --> ε
+第88步：    当前栈：# Prg ; Com1              待读队列：- - num ; #          下一步所用产生式：Com2 --> Add Com2 Com1
+第89步：    当前栈：# Prg ; Com1 Com2 Add              待读队列：- - num ; #          下一步所用产生式：Add --> -
+第90步：    当前栈：# Prg ; Com1 Com2 -              待读队列：- - num ; # 
+第91步：    当前栈：# Prg ; Com1 Com2              待读队列：- num ; #          下一步所用产生式：Com3 --> Val Com3
+第92步：    当前栈：# Prg ; Com1 Com3 Val              待读队列：- num ; #          下一步所用产生式：Val --> Int
+第93步：    当前栈：# Prg ; Com1 Com3 Int              待读队列：- num ; #          下一步所用产生式：Int --> Add num
+第94步：    当前栈：# Prg ; Com1 Com3 num Add              待读队列：- num ; #          下一步所用产生式：Add --> -
+第95步：    当前栈：# Prg ; Com1 Com3 num -              待读队列：- num ; # 
+第96步：    当前栈：# Prg ; Com1 Com3 num              待读队列：num ; # 
+第97步：    当前栈：# Prg ; Com1 Com3              待读队列：; #          下一步所用产生式：Com3 --> ε
+第98步：    当前栈：# Prg ; Com1              待读队列：; #          下一步所用产生式：Com --> ε
+第99步：    当前栈：# Prg ;              待读队列：; # 
+第100步：    当前栈：# Prg              待读队列：#          下一步所用产生式：Prg --> ε
+第101步：    当前栈：#              待读队列：# 
+Accept
