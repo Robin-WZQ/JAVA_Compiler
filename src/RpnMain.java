@@ -168,21 +168,4 @@ public class RpnMain {
         }
         sc.close();
     }
-        // while (true) {
-            
-        //     System.out.println("==========================\n请输入表达式(按q退出)");
-        //     String input = sc.nextLine();
-        //     if ("q".equals(input)) {
-        //         sc.close();
-        //         return;
-        //     } else {
-        //         if (rpnMain.isMatch(input)) {
-        //             System.out.println("生成成功，如下：");
-        //             // 获取逆波兰式
-        //             System.out.println(rpnMain.getRpn(input));
-        //         } else {
-        //             System.out.println("错误！按 'q' 退出");
-        //         }
-        //     }
-        // }
 }
