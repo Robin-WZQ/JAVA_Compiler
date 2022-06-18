@@ -74,7 +74,7 @@
     <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片14.png width="300"/>
 </div>
 
-## Usage - 使用方法
+## 使用方法
 
 - 切换到当前目录
 
@@ -106,7 +106,7 @@ java RpnMain
 // 输出文件：rpn_output.txt
 ```
 
-## Code Tree - 文件说明
+## 文件说明
 
 | src
 
@@ -116,9 +116,11 @@ java RpnMain
 
 ----| RpnMain.java # 中间代码生成源码
 
+## license
+MIT
 
-<!-- ## 参考
+## 参考
 
 https://github.com/SJ-Z/SyntaxAnalyzer
 
-https://www.dssz.com/1861225.html -->
+https://www.dssz.com/1861225.html
