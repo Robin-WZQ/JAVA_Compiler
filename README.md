@@ -51,7 +51,7 @@
 
 - 关系预测表
 <div align=center>
-    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片7.png width="500"/>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片7.png width="700"/>
 </div>
 
 ### 输入（JAVA语言代码）
