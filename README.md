@@ -35,8 +35,6 @@
 
 ### 构建LL（1）文法
 
-> P.S. 图片中描述可能稍微有点问题，但代码都修正了
-
 - 改写后文法：
 <div align=center>
     <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片3.png width="500"/>
