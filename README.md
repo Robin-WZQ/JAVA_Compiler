@@ -63,7 +63,7 @@
 ### 语法分析结果
 
 <div align=center>
-    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片11.png width="700"/>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片13.png width="700"/>
 </div>
 
 ### 语义分析结果
@@ -71,13 +71,50 @@
 语法树没搞出来，就弄了个逆波兰表达式：
 
 <div align=center>
-    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/pic15.png width="300"/>
+    <img src=https://github.com/Robin-WZQ/JAVA_Compiler/blob/main/pic/图片14.png width="300"/>
 </div>
 
-## 使用
-'''
-bash
-'''
+## Usage - 使用方法
+
+- 切换到当前目录
+
+```
+cd ./out
+```
+
+- 词法分析
+
+```
+java LexicalAnalyzer
+// 输入文件：input.txt
+// 输出文件：lex_output.txt
+```
+
+- 语法分析
+
+```
+java SyntaxAnalyzer
+// 输入文件：lex_output.txt
+// 输出文件：syn_output.txt
+```
+
+- 中间代码生成（逆波兰表达式）
+
+```
+java RpnMain
+// 输入文件：rpn_input.txt
+// 输出文件：rpn_output.txt
+```
+
+## Code Tree - 文件说明
+
+| src
+
+----| LexicalAnalyzer.java #  词法分析源代码
+
+----| SyntaxAnalyzer.java # 语法分析源代码
+
+----| RpnMain.java # 中间代码生成源码
 
 
 <!-- ## 参考
