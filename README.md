@@ -92,6 +92,7 @@ cd ./out
 - 词法分析
 
 ```
+javac -encoding UTF-8 LexicalAnalyzer.java
 java LexicalAnalyzer
 // 输入文件：input.txt
 // 输出文件：lex_output.txt
@@ -100,6 +101,7 @@ java LexicalAnalyzer
 - 语法分析
 
 ```
+javac -encoding UTF-8 SyntaxAnalyzer.java
 java SyntaxAnalyzer
 // 输入文件：lex_output.txt
 // 输出文件：syn_output.txt
@@ -108,6 +110,7 @@ java SyntaxAnalyzer
 - 中间代码生成（逆波兰表达式）
 
 ```
+javac -encoding UTF-8 RpnMain.java
 java RpnMain
 // 输入文件：rpn_input.txt
 // 输出文件：rpn_output.txt
