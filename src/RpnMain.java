@@ -127,7 +127,7 @@ public class RpnMain {
     }
     public static void main(String[] args)  throws IOException {
         RpnMain rpnMain = new RpnMain();
-        System.out.println("\n逆波兰表达式，王中琦，1120190892\n");
+        System.out.println("\n逆波兰表达式\n");
         
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入测试文件的路径:");
